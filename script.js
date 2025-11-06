@@ -1,4 +1,5 @@
 function handle_input() {
+    loading(true)
     const input_text=document.getElementById('input-text');
     const search_input=input_text.value;
     show_data(search_input);
@@ -13,6 +14,16 @@ const data=await res.json();
 show_data2(data.data);
 
 }
+function loading(isloading) {
+    const loading_spin=document.getElementById('loading-spin');
+    if (isloading) {
+        loading_spin.classList.remove('hidden')
+    } else {
+        loading_spin.classList.add('hidden')
+    }
+    
+}
+
 const show_data2 = (search_data) => {
   console.log(search_data);
 
@@ -38,4 +49,5 @@ const show_data2 = (search_data) => {
     
     main_card.appendChild(single_card);
   });
+  loading(false)
 };
