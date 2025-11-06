@@ -42,7 +42,7 @@ const show_data2 = (search_data) => {
         </div>
         <h2 style="text-align:center;">${phone.phone_name}</h2>
         <p>There are many variations of passages available, but the majority have suffered</p>
-        <h2 style="text-align:center;">$${phone.price}</h2>
+        <h2 style="text-align:center;">1000$</h2>
         <div><button class="btn">Show Details</button></div>
     `;
 
