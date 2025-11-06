@@ -89,5 +89,47 @@ font-weight: 800px;
   outline: none;
   font-size: 16px;
 }
+.card-section{
+    width: 80%;
 
-.
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    border: 1px solid rgb(211, 199, 199);
+    border-radius: 10px;
+    padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    gap: 10px;
+}
+
+.card-img{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.card-img > img{
+    width: 80%;
+}
+
+.card > button{
+    width: fit-content;
+}
+
+.card-img:hover{
+    background-color: rgb(194, 180, 180);
+    transition: 0.8s;
+}
+
+.card >p{
+    color: rgb(124, 101, 101);
+    text-align: center;
+}
