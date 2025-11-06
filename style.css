@@ -22,3 +22,22 @@
     width: 90%;
 
 }
+
+.phone-doc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;;
+}
+.phone-doc > p{
+    text-align: center;
+    font-weight: 20px;
+    color: rgb(124, 118, 118);
+}
+
+.phone-doc > h1{
+text-shadow: 2px 2px #d15d5d;
+font-size: 50px;
+font-weight: 800px;
+}
